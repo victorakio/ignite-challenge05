@@ -1,1 +1,47 @@
 // TODO
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.postList {
+  max-width: 1120px;
+}
+
+.post {
+  width: 700px;
+  display: block;
+  color: var(--gray-200);
+  text-decoration: none;
+  margin-top: 2.5rem;
+  line-height: 2rem;
+  transition: color 0.2s;
+
+  div {
+    display: flex;
+    margin-top: 1rem;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    time {
+      margin-right: 1.6rem;
+    }
+  }
+
+  &:hover {
+    color: var(--pink-50);
+  }
+}
+
+.loadMore {
+  color: var(--pink-50);
+  width: 700px;
+  margin-top: 4rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+  text-align: start;
+}

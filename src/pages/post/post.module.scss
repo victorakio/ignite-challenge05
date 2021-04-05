@@ -1,1 +1,52 @@
 // TODO
+.container {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 440px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  article {
+    width: 720px;
+    margin: 80px auto;
+
+    h1 {
+      color: var(--gray-50);
+      font-size: 48px;
+    }
+  }
+
+  .postDate {
+    display: flex;
+    margin-top: 24px;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    p {
+      color: var(--gray-200);
+
+      &:not(first-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .heading {
+    color: var(--gray-50);
+    font-size: 36px;
+    margin-top: 60px;
+    margin-bottom: 58px;
+  }
+
+  .content {
+    margin-top: 64px;
+    color: var(--gray-200);
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
