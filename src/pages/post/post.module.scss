@@ -34,6 +34,11 @@
         margin-right: 24px;
       }
     }
+
+    & + p {
+      margin-top: 1rem;
+      color: var(--gray-200);
+    }
   }
 
   .heading {
@@ -48,5 +53,40 @@
     color: var(--gray-200);
     font-size: 18px;
     line-height: 25px;
+  }
+
+  hr {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  .postNavigation {
+    width: 720px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: var(--gray-50);
+      line-height: 1.8rem;
+      width: 45%;
+
+      p:last-child {
+        color: var(--pink-50);
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+
+      &:last-child {
+        text-align: end;
+      }
+    }
   }
 }
